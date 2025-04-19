@@ -1,47 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Website Sederhana</title>
     <style>
+        /* CSS Styling */
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            color: #333;
+            background-color: #f4f4f4;
         }
+        
         header {
-            background-color: #4CAF50;
+            background: #35424a;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
-        main {
+        
+        nav {
+            background: #e8491d;
+            padding: 10px;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        section {
             padding: 20px;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        
         footer {
-            background-color: #333;
+            background: #35424a;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Webpage</h1>
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Website sederhana dengan HTML dan CSS</p>
     </header>
-    <main>
-        <h2>About</h2>
-        <p>Test test test</p>
-    </main>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section>
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah contoh halaman website sederhana yang dibuat menggunakan HTML dan CSS dasar. Anda bisa mengembangkan ini lebih lanjut sesuai kebutuhan.</p>
+        </section>
+        
+        <section>
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Pembuatan Website</li>
+                <li>Desain Grafis</li>
+                <li>SEO Optimization</li>
+                <li>Maintenance Website</li>
+            </ul>
+        </section>
+    </div>
+    
     <footer>
-        <p>&copy; 2023 Simple Webpage</p>
+        <p>&copy; 2023 Website Sederhana. Semua hak dilindungi.</p>
     </footer>
 </body>
 </html>
-
