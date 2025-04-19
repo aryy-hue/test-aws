@@ -20,6 +20,16 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            position: relative;
+        }
+        
+        .header-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px auto;
+            display: block;
+            border: 3px solid white;
         }
         
         nav {
@@ -59,6 +69,28 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         
+        .service-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .gallery-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
         footer {
             background: #35424a;
             color: white;
@@ -76,11 +108,16 @@
                 display: block;
                 margin: 10px 0;
             }
+            
+            .image-gallery {
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://media.istockphoto.com/id/544343124/photo/panther-chameleon.jpg?s=612x612&w=0&k=20&c=wf6Sj0GdwnogWq0DDmfxGkN15VOTaixrN0V7dCPsYsQ=" alt="Logo Perusahaan" class="header-image">
         <h1>Selamat Datang di Website Saya</h1>
         <p>Website sederhana dengan HTML dan CSS</p>
     </header>
@@ -90,6 +127,7 @@
             <li><a href="#">Beranda</a></li>
             <li><a href="#">Tentang Kami</a></li>
             <li><a href="#">Layanan</a></li>
+            <li><a href="#">Galeri</a></li>
             <li><a href="#">Kontak</a></li>
         </ul>
     </nav>
@@ -97,17 +135,32 @@
     <div class="container">
         <section>
             <h2>Tentang Kami</h2>
+            <img src="https://via.placeholder.com/600x300" alt="Tentang Kami" class="service-image">
             <p>Ini adalah contoh halaman website sederhana yang dibuat menggunakan HTML dan CSS dasar. Anda bisa mengembangkan ini lebih lanjut sesuai kebutuhan.</p>
+            <p>Kami adalah tim profesional yang berdedikasi untuk memberikan solusi digital terbaik untuk bisnis Anda.</p>
         </section>
         
         <section>
             <h2>Layanan Kami</h2>
+            <img src="https://media.istockphoto.com/id/669057792/photo/yemen-chameleon-isolated-on-black-background.jpg?s=612x612&w=0&k=20&c=eQeY_nySsC9MSepPI4kOvVy-MTpkEgWRqxCE5SLjLKc=" alt="Layanan Kami" class="service-image">
             <ul>
                 <li>Pembuatan Website</li>
                 <li>Desain Grafis</li>
                 <li>SEO Optimization</li>
                 <li>Maintenance Website</li>
             </ul>
+        </section>
+        
+        <section>
+            <h2>Galeri Kami</h2>
+            <div class="image-gallery">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Proyek 1" class="gallery-image">
+                <img src="https://t4.ftcdn.net/jpg/08/09/09/83/360_F_809098361_z45jKPDGsYymmTJcFQvp3VGTPgGuY35L.jpg" alt="Proyek 2" class="gallery-image">
+                <img src="https://t3.ftcdn.net/jpg/09/06/73/88/360_F_906738843_5PArJ0k9bLhZxbJAY1NQtaG653c8fkPX.jpg" alt="Proyek 3" class="gallery-image">
+                <img src="https://thumbs.dreamstime.com/b/photor%C3%A9alisme-symbolisant-la-capacit%C3%A9-d-adaptation-des-entreprises-gr%C3%A2ce-%C3%A0-symboles-entreprise-%C3%A9clatants-une-image-342274789.jpg" alt="Proyek 4" class="gallery-image">
+                <img src="https://thumbs.dreamstime.com/b/yemen-chameleon-chamaeleo-calypratus-21128057.jpg" alt="Proyek 5" class="gallery-image">
+                <img src="https://thumbs.dreamstime.com/b/chameleon-4585387.jpg" alt="Proyek 6" class="gallery-image">
+            </div>
         </section>
     </div>
     
